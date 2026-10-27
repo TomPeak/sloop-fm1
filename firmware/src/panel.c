@@ -89,7 +89,7 @@ static uint8_t lights_min;                     /* GLO > SYSTEM > IN (G_ROUTE): 0
 static uint8_t midi_set[10] = MIDI_SET_DEF;
 static uint8_t fxfade;                          /* (2.7.2) FX layer SELECT (FX held): the punch-in FX fade, 0..15 (punch.c);
                                                  * a setting of the FM-1, mirrored in song.g[G_FXFADE], kept in BEND's byte */
-static const uint16_t LIGHTS_NS[LIGHTS_N] = {0u, 500u, 1000u, 2000u};   /* the backlight pulse a frame (ns): a lit
+static const uint16_t LIGHTS_NS[LIGHTS_N] = {0u, 500u, 1000u, 3000u};   /* the backlight pulse a frame (ns): a lit
                                                 * LED ~95 us, the glow (landmarks) 4 us (fm1_input.h) */
 static uint8_t usb_serial;                      /* menu USB SERIAL: 1 = the serial console presented (usb.c) */
 static uint8_t usb_rate;                        /* menu USB RATE (2.7 beta): 0 AUTO, 1 44.1, 2 48 kHz (usb.c usb_rate_mode, at the next start) */
